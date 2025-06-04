@@ -8,6 +8,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -32,6 +33,7 @@ nav ul li {
 .brand img {
     width: 46px;
     padding: 0px 8px;
+
 }
 
 .brand {

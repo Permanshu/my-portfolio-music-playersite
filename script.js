@@ -222,3 +222,11 @@ audioElement.addEventListener('ended', () => {
     gif.style.opacity = 0;
 });
 
+//Spacebar to play/pause
+document.addEventListener('keydown', function (event) {
+    if (event.key === " " || event.key === "Space") {
+        event.preventDefault();
+        masterPlay.click();
+    }
+})
+
