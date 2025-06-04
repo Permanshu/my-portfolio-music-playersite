@@ -8,7 +8,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+     
 }
 
 nav {
@@ -31,7 +31,7 @@ nav ul li {
 }
 
 .brand img {
-    width: 46px;
+    width: 56px;
     padding: 0px 8px;
 
 }
@@ -101,28 +101,38 @@ nav ul li {
 }
 
 .songinfo {
-    display: flexbox;
-    flex-direction: row;
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+     
 
 }
 
 /* gif playing */
 .songinfo img {
-    display: flex;
-    justify-content: center;
+    
+    position: relative;
+    top: -12px;
+    justify-content: space-between;
     align-items: center;
     width: 212px;
     height: 49px;
     font-family: 'Varela Round', sans-serif;
     transition: opacity 0.27s ease-in;
+    z-index: 1;
 }
 
 #mastersongname {
+    position: relative;
+    top: -24px;
+    align-items: center;
     display: flex;
     flex-direction: row;
     color: antiquewhite;
     font-family: 'Varela Round', sans-serif;
-
+    z-index:4;
 }
 
 
@@ -135,6 +145,7 @@ nav ul li {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 0;
 }
 
 .icons {
@@ -143,6 +154,8 @@ nav ul li {
     align-items: center;
     gap: 20px;
     margin-top: 11px;
+    width: 100%;
+    z-index: 2;
 }
 
 .icons i {

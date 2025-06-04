@@ -3,6 +3,8 @@ console.log("Let's play some music");
 //Initializing variables
 let songIndex = 0;
 gif.style.opacity = 0;
+mastersongname.style.opacity = 0;
+
 let masterPlay = document.getElementById('masterPlay');
 let myprogressbar = document.getElementById('myprogressbar');
 gif = document.getElementById('gif');
@@ -76,6 +78,7 @@ masterPlay.addEventListener('click', () => {
         masterPlay.classList.remove('fa-circle-play');
         masterPlay.classList.add('fa-circle-pause');
         gif.style.opacity = 1;
+        mastersongname.style.opacity = 1;
 
         makeAllPlays();
         // Highlight the currently playing song button
@@ -89,6 +92,8 @@ masterPlay.addEventListener('click', () => {
         masterPlay.classList.remove('fa-circle-pause');
         masterPlay.classList.add('fa-circle-play');
         gif.style.opacity = 0;
+     
+         
 
         makeAllPlays();
         // document.getElementById(songIndex).classList.remove('fa-circle-pause');
@@ -126,6 +131,7 @@ const makeAllPlays = () => {
     Array.from(document.getElementsByClassName('songitemplay')).forEach((element) => {
         element.classList.remove('fa-circle-pause');
         element.classList.add('fa-circle-play');
+         
     })
 }
 
@@ -160,6 +166,7 @@ Array.from(document.getElementsByClassName('songitemplay')).forEach((element) =>
             gif.style.opacity = 1;
             //display song name
             mastersongname.innerText = songs[songIndex].SongName;
+            
 
         }
 
