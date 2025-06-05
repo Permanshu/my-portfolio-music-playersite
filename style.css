@@ -12,11 +12,14 @@ body {
 }
 
 nav {
+    position: sticky;
+    top: 0;
     font-family: "Ubuntu", sans-serif;
 
 }
 
 nav ul {
+
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -69,7 +72,7 @@ nav ul li {
 .songItem {
 
     height: 47px;
-
+    position: relative;
     width: 38%;
     display: flex;
     flex-direction: row;
@@ -92,6 +95,11 @@ nav ul li {
     }
 }
 
+.songlistplay {
+    display: flex;
+    flex-direction: row;
+}
+
 .songItem img {
     width: 42px;
     display: flex;
@@ -101,7 +109,9 @@ nav ul li {
 }
 
 .timestamp {
-    margin: 0 7px;
+
+    margin-left: auto;
+    margin-right: 7px;
 
 
 }
@@ -199,4 +209,29 @@ nav ul li {
     margin-top: -5px;
     /* aligns the thumb vertically */
     cursor: pointer;
+}
+
+#home {
+    cursor: pointer;
+
+}
+
+#home:hover {
+    color: rgb(185, 93, 27);
+}
+
+#home:active {
+    transform: scale(0.95);
+}
+
+#about {
+    cursor: pointer;
+}
+
+#about:hover {
+    color: rgb(26, 169, 205);
+}
+
+#about:active {
+    transform: scale(0.95);
 }

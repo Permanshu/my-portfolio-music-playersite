@@ -1,5 +1,9 @@
 console.log("Let's play some music");
 
+document.getElementById("home").onclick=function(){
+    window.location.href="https://github.com/Permanshu"
+};
+
 //Initializing variables
 let songIndex = 0;
 gif.style.opacity = 0;
