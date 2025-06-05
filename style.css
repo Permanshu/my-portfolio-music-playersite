@@ -8,7 +8,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-     
+
 }
 
 nav {
@@ -67,7 +67,9 @@ nav ul li {
 }
 
 .songItem {
+
     height: 47px;
+
     width: 38%;
     display: flex;
     flex-direction: row;
@@ -80,6 +82,14 @@ nav ul li {
     border-bottom-right-radius: 30px;
     margin: 10px;
 
+}
+
+@media (max-width: 740px) {
+    .songItem {
+        width: 90%;
+        max-width: 700px;
+        margin: 10px auto;
+    }
 }
 
 .songItem img {
@@ -101,18 +111,18 @@ nav ul li {
 }
 
 .songinfo {
-     
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-     
+
 
 }
 
 /* gif playing */
 .songinfo img {
-    
+
     position: relative;
     top: -12px;
     justify-content: space-between;
@@ -132,7 +142,7 @@ nav ul li {
     flex-direction: row;
     color: antiquewhite;
     font-family: 'Varela Round', sans-serif;
-    z-index:4;
+    z-index: 4;
 }
 
 
